@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GPA Tahmini</title>
+</head>
+<body>
+    <h1>Student GPA Prediction</h1>
+    <form method="POST" action="/predict">
+        <label for="Study_Hours_Per_Day">Study Hours:</label>
+        <input type="number" step="0.1" name="Study_Hours_Per_Day" required><br>
+
+        <label for="Extracurricular_Hours_Per_Day">Extracurricular Hours:</label>
+        <input type="number" step="0.1" name="Extracurricular_Hours_Per_Day" required><br>
+
+        <label for="Sleep_Hours_Per_Day">Sleep Hours:</label>
+        <input type="number" step="0.1" name="Sleep_Hours_Per_Day" required><br>
+
+        <label for="Social_Hours_Per_Day">Social Hours:</label>
+        <input type="number" step="0.1" name="Social_Hours_Per_Day" required><br>
+
+        <label for="Physical_Activity_Hours_Per_Day">Physical Activity Hours:</label>
+        <input type="number" step="0.1" name="Physical_Activity_Hours_Per_Day" required><br>
+
+        <label for="Stress_Level">Stress Level:</label>
+        <select name="Stress_Level" required>
+            <option value="High">High</option>
+            <option value="Moderate">Moderate</option>
+            <option value="Low">Low</option>
+        </select><br>
+
+        <input type="submit" value="Predict GPA">
+    </form>
+</body>
+</html>
